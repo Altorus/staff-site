@@ -6,8 +6,8 @@ section
 form
 .select-color
 input {
+    z-index: 10;
     opacity: 0;
-    margin-right: 18px;
     position: relative;
 }
 
@@ -63,81 +63,6 @@ label:last-of-type:hover::before {
     position: absolute;
     top: -20px;
     left: -50px;
-}
-
-main
-section
-.container
-.main-info-product
-.info-block
-form
-.select-color
-label:nth-last-of-type(5) {
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: none;
-    background-image: url("../images/material/venge.jpg");
-}
-
-main
-section
-.container
-.main-info-product
-.info-block
-form
-.select-color
-label:nth-last-of-type(4) {
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: none;
-    background-image: url("../images/material/dub.jpg");
-}
-
-main
-section
-.container
-.main-info-product
-.info-block
-form
-.select-color
-label:nth-last-of-type(3) {
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: none;
-    background-image: url("../images/material/yasen.jpg");
-}
-
-main
-section
-.container
-.main-info-product
-.info-block
-form
-.select-color
-label:nth-last-of-type(2) {
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: none;
-    background-image: url("../images/material/white.jpg");
-}
-
-main
-section
-.container
-.main-info-product
-.info-block
-form
-.select-color
-label:nth-last-of-type(1) {
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: none;
-    background-image: url("../images/material/whitewood.jpg");
 }
 
 main section .container .main-info-product .select-color input:hover {
@@ -2617,6 +2542,10 @@ form .select-color input {
     position: relative;
 }
 
+form .select-color input[type=radio]:checked + label{
+    border: 2px solid var(--red);
+}
+
 form .select-color label::before {
     content: attr(data-title);
     display: none;
@@ -2641,6 +2570,7 @@ form .select-color label:nth-last-of-type(5) {
     position: absolute;
     width: 26px;
     height: 26px;
+    margin-left: -26px;
     border: none;
     background-image: url("../images/material/venge.jpg");
 }
@@ -2649,6 +2579,7 @@ form .select-color label:nth-last-of-type(4) {
     position: absolute;
     width: 26px;
     height: 26px;
+    margin-left: -26px;
     border: none;
     background-image: url("../images/material/dub.jpg");
 }
@@ -2657,6 +2588,7 @@ form .select-color label:nth-last-of-type(3) {
     position: absolute;
     width: 26px;
     height: 26px;
+    margin-left: -26px;
     border: none;
     background-image: url("../images/material/yasen.jpg");
 }
@@ -2665,6 +2597,7 @@ form .select-color label:nth-last-of-type(2) {
     position: absolute;
     width: 26px;
     height: 26px;
+    margin-left: -26px;
     border: none;
     background-image: url("../images/material/white.jpg");
 }
@@ -2673,6 +2606,7 @@ form .select-color label:nth-last-of-type(1) {
     position: absolute;
     width: 26px;
     height: 26px;
+    margin-left: -26px;
     border: none;
     background-image: url("../images/material/whitewood.jpg");
 }
