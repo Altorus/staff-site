@@ -988,7 +988,7 @@
     }
 
     .popup.review{
-        height: 90vh;
+        max-height: 90vh;
         overflow-y: scroll;
     }
 }
@@ -1184,7 +1184,7 @@
 
     .content-review .slick-img-review {
         height: auto;
-        width: 330px;
+        width: 280px;
     }
 
     .review-block .avatar {
@@ -1230,7 +1230,7 @@
 
     .content-review .slick-img-review {
         height: auto;
-        width: 260px;
+        width: 240px;
     }
 
     .review-header h1 {
