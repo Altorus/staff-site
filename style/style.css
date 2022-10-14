@@ -131,7 +131,7 @@ body {
 }
 
 .container {
-    width: 1180px;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -240,7 +240,7 @@ header {
     position: fixed;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 100vw;
     z-index: 21;
 }
 
@@ -1049,6 +1049,7 @@ span:last-of-type {
 }
 
 .burger-menu {
+    display: none;
     position: absolute;
     right: -100%;
 }
@@ -2967,6 +2968,11 @@ form .select-color label:nth-last-of-type(1) {
     margin-top: -30px;
 }
 
+.slick-button-section.slider.stock{
+    gap: 35px;
+    padding-top: 40px;
+}
+
 .dots {
     position: relative;
     z-index: 2;
@@ -2988,7 +2994,9 @@ form .select-color label:nth-last-of-type(1) {
 .slick-button-section .slic-rev-next,
 .slick-button-section .slic-rev-prev,
 .slick-button-section .about-prev,
-.slick-button-section .about-next {
+.slick-button-section .about-next,
+.slick-button-section .slic-stock-next,
+.slick-button-section .slic-stock-prev{
     padding: 10px 15px;
     color: #fff;
     background-color: var(--pink);
@@ -3009,6 +3017,16 @@ form .select-color label:nth-last-of-type(1) {
 }
 
 .slick-button-section .slic-rev-prev:before {
+    font: var(--fa-font-solid);
+    content: '\f053';
+}
+
+.slick-button-section .slic-stock-next:before {
+    font: var(--fa-font-solid);
+    content: '\f054';
+}
+
+.slick-button-section .slic-stock-prev:before {
     font: var(--fa-font-solid);
     content: '\f053';
 }
@@ -3072,9 +3090,9 @@ main .container h2 {
 }
 
 main .container .catalog {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 70px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
 }
 
 main .container .catalog .product {

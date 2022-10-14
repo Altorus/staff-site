@@ -42,53 +42,33 @@ $(document).ready(function () {
             slidesToShow: 3,
             slidesToScroll: 3,
             dotsClass: "products-dots",
+            responsive: [
+                {
+                    breakpoint: 811,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    },
+                },
+                {
+                    breakpoint: 481,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
         });
     }
+    $(".slick-stock").slick({
+        autoplay: true,
+        arrows: false,
+        autoplaySpeed: 3000,
+        dots: true,
+        dotsClass: "products-dots",
+        fade: true,
+    });
 
-    if (screen.width <= 810 && screen.width >= 479) {
-        $(".slick-products").slick({
-            dots: true,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            dotsClass: "products-dots",
-        });
-    }
-
-    if (screen.width <= 480 && screen.width < 810) {
-        $(".slick-products").slick({
-            dots: true,
-            arrows: false,
-            autoplay: true,
-            autoplaySpeed: 3000,
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dotsClass: "products-dots",
-        });
-    }
-
-    if (screen.width <= 480 && screen.width < 810) {
-        $(".slick-stock").slick({
-            autoplay: true,
-            arrows: false,
-            autoplaySpeed: 3000,
-            dots: true,
-            dotsClass: "products-dots",
-            fade: true,
-        });
-    } else {
-        $(".slick-stock").slick({
-            prevArrow: '<button type = "button" class = "prev-stock"></ button> ',
-            nextArrow: '<button type = "button" class = "next-stock"></ button> ',
-            autoplay: true,
-            autoplaySpeed: 3000,
-            dots: true,
-            dotsClass: "products-dots",
-            fade: true,
-        });
-    }
 });
 
 $(document).ready(function () {
@@ -114,13 +94,12 @@ $(document).ready(function () {
 $(".slick-img-review").slick({
     dots: true,
     arrows: true,
-    // autoplay: true,
+    autoplay: true,
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
     dotsClass: "products-dots",
-    // function: countSlides($(".slick-img-review")),
     responsive: [
         {
             breakpoint: 811,
@@ -143,6 +122,14 @@ $('.slic-rev-prev').click(() => {
 
 $('.slic-rev-next').click(() => {
     $('.slick-review').slick('slickNext')
+})
+
+$('.slic-stock-prev').click(() => {
+    $('.slick-stock').slick('slickPrev')
+})
+
+$('.slic-stock-next').click(() => {
+    $('.slick-stock').slick('slickNext')
 })
 
 // function countSlides(slides) {
