@@ -2259,7 +2259,7 @@ main .error .block-left span {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    z-index: 100;
+    z-index: 10;
     transition: 0.3s;
 }
 
@@ -2538,7 +2538,7 @@ form .custom-checkbox input {
 
 form .select-color input {
     opacity: 0;
-    margin-right: 18px;
+    /*margin-right: 18px;*/
     position: relative;
 }
 
@@ -2958,4 +2958,66 @@ form .select-color label:nth-last-of-type(1) {
 
 .recall-form h2 {
     margin-bottom: 30px;
+}
+
+.slick-button-section.slider{
+    position: relative;
+    z-index: 1;
+    gap: 105px;
+    margin-top: -30px;
+}
+
+.dots{
+    position: relative;
+    z-index: 2;
+}
+
+.warning-inputs{
+    transition: all .3s ease-in-out;
+    border: 1px solid var(--red) !important;
+}
+
+.slick-button-section {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+    /*margin-top: -60px;*/
+}
+
+.slick-button-section .slic-rev-next,
+.slick-button-section .slic-rev-prev,
+.slick-button-section .about-prev,
+.slick-button-section .about-next{
+    padding: 10px 15px;
+    color: #fff;
+    background-color: var(--pink);
+    border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+
+.slick-button-section .slic-rev-next:hover,
+.slick-button-section .slic-rev-prev:hover{
+    background-color: var(--red);
+    cursor: pointer;
+}
+
+
+.slick-button-section .slic-rev-next:before{
+    font: var(--fa-font-solid);
+    content: '\f054';
+}
+.slick-button-section .slic-rev-prev:before{
+    font: var(--fa-font-solid);
+    content: '\f053';
+}
+
+.slick-button-section .about-next:before {
+    font: var(--fa-font-solid);
+    content: '\f054';
+}
+
+.slick-button-section .about-prev:before {
+    font: var(--fa-font-solid);
+    content: '\f053';
 }

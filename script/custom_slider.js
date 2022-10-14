@@ -2,7 +2,7 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function currentSlide(n) {
-  showSlides((slideIndex = n - 1));
+  showSlides((slideIndex = n));
 }
 
 $(".mySlides").click(() => {
@@ -51,3 +51,10 @@ function showSlides(n) {
   slides[slideIndex - 1].classList.add("main");
   dots[slideIndex - 1].className += " active";
 }
+
+$('.about-prev').click(()=>{
+    showSlides((slideIndex -= 1));
+})
+$('.about-next').click(()=>{
+    showSlides((slideIndex += 1));
+})
