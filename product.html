@@ -5,16 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="../../style/mobile.css">
-    <link rel="stylesheet" href="../../fonts/gilroy/style.css">
-    <link rel="stylesheet" href="../../fonts/geometria/style.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/mobile.css">
+    <link rel="stylesheet" href="fonts/gilroy/style.css">
+    <link rel="stylesheet" href="fonts/geometria/style.css">
 
-    <link rel="icon" href="../../images/icons/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="images/icons/favicon.svg" type="image/x-icon">
 
-    <link rel="stylesheet" type="text/css" href="../../slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="../../slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,22 +26,21 @@
 
 <body>
 <header>
-
     <div class="burger-menu">
         <nav>
             <div class="container">
                 <ul>
                     <li id="menu">
-                        <a class="page" href="#">Каталог</a>
+                        <a class="page" href="catalog/catalog.html">Каталог</a>
                         <span class="menu-arrow arrow"></span>
                         <ul class="sub-menu">
-                            <li><a href="../catalog/" class="sub-menu-link">Шкафы купе</a></li>
-                            <li><a href="../catalog/" class="sub-menu-link">Матрасы</a></li>
+                            <li><a href="catalog/index.html" class="sub-menu-link">Шкафы купе</a></li>
+                            <li><a href="catalog/index.html" class="sub-menu-link">Матрасы</a></li>
                         </ul>
                     </li>
-                    <li><a class="page" href="../../index.html">О компании</a></li>
-                    <li><a class="page" href="../../contact.html">Контакты</a></li>
-                    <li><a class="page" href="../../review.html">Отзывы</a></li>
+                    <li><a class="page" href="/">О компании</a></li>
+                    <li><a class="page" href="contact.html">Контакты</a></li>
+                    <li><a class="page" href="review.html">Отзывы</a></li>
                 </ul>
                 <div class="messanger">
                     <a href="https://vk.com/public215695616" class="img"></a>
@@ -56,15 +55,15 @@
         <div class="container">
             <ul class="menu-ul">
                 <li>
-                    <a class="page" href="">Каталог</a>
+                    <a class="page" href="catalog/catalog.html">Каталог</a>
                     <ul class="sub-menu">
-                        <li><a href="../catalog/" class="sub-menu-link">Шкафы купе</a></li>
-                        <li><a href="../catalog/" class="sub-menu-link">Матрасы</a></li>
+                        <li><a href="catalog/index.html" class="sub-menu-link">Шкафы купе</a></li>
+                        <li><a href="catalog/index.html" class="sub-menu-link">Матрасы</a></li>
                     </ul>
                 </li>
-                <li><a class="page" href="../../index.html">О компании</a></li>
-                <li><a class="page" href="../../contact.html">Контакты</a></li>
-                <li><a class="page" href="../../review.html">Отзывы</a></li>
+                <li><a class="page" href="/">О компании</a></li>
+                <li><a class="page" href="contact.html">Контакты</a></li>
+                <li><a class="page" href="review.html">Отзывы</a></li>
             </ul>
             <div class="messanger">
                 <a href="https://vk.com/public215695616" class="img"></a>
@@ -79,7 +78,7 @@
             <div class="popup-fade">
                 <div class="popup">
                     <a class="popup-close" href="#">Закрыть</a>
-                    <form action="#" class="test">
+                    <form action="#" class="test form-max">
                         <div class="custom-input">
                             <label class="label-form" for="what-modal">Что хотим?</label>
                             <select name="" class="input-form" id="what-modal">
@@ -100,11 +99,11 @@
                         </div>
                         <div class="custom-input">
                             <label class="label-form" for="width">Ваше имя</label>
-                            <input class="input-form" placeholder="Иван/Наталья" type="text" id="name">
+                            <input class="input-form name" placeholder="Иван/Наталья" type="text" id="name">
                         </div>
                         <div class="custom-input">
                             <label class="label-form" for="width">Ваш телефон</label>
-                            <input class="input-form" placeholder="+7(123)456-78-90" type="text" id="phone">
+                            <input class="input-form phone" placeholder="+7(123)456-78-90" type="text" id="phone">
                         </div>
                         <div class="custom-input">
                             <label class="label-form" for="photo">Прикрепить фото</label>
@@ -132,11 +131,10 @@
                         </div>
                         <p class="annatation">Полная палитра в офисах продаж</p>
 
-                        <input type="submit" value="Оформить" class="btn">
+                        <input type="submit" value="Оформить" class="btn btn-order-max">
                     </form>
                 </div>
             </div>
-
 
             <div class="popup-fade-order">
                 <div class="popup">
@@ -145,22 +143,20 @@
                         <h2>Форма заявки</h2>
                         <div class="custom-input">
                             <label class="label-form" for="width">Имя</label>
-                            <input class="input-form" placeholder="Ваше имя" type="text" id="width">
+                            <input class="input-form name" placeholder="Иван/Наталья" type="text" id="width">
                         </div>
                         <div class="custom-input">
                             <label class="label-form" for="length">Номер телефона</label>
-                            <input class="input-form" placeholder="Номер телефона" type="phone" id="phone">
+                            <input class="input-form phone" placeholder="+7(123)456-78-90" type="phone" id="phone">
                         </div>
-
-
-                        <input type="submit" value="Заказать" class="btn">
+                        <input type="submit" value="Заказать" class="btn btn-modal-order">
                     </form>
                 </div>
             </div>
 
             <div class="logo">
-                <a href="../../index.html">
-                    <img src="../../images/logo.png" alt="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="logo">
                 </a>
             </div>
 
@@ -178,7 +174,7 @@
             <div class="contact-block">
                 <div class="info-block">
                     <a href="https://yandex.ru/maps/-/CCUVINbSSD">
-                        <img src="../../images/icons/home.svg" alt="address">
+                        <img src="images/icons/home.svg" alt="address">
                         <div class="info">
                                 <span class="main-info">
                                     ул. Дзержинского 38а
@@ -194,7 +190,7 @@
             <div class="contact-block">
                 <div class="info-block">
                     <a href="tel: +79276146281">
-                        <img src="../../images/icons/phone.svg" alt="phone">
+                        <img src="images/icons/phone.svg" alt="phone">
                         <div class="info">
                                 <span class="main-info">
                                     +7(927)614-62-81
@@ -208,7 +204,7 @@
             </div>
 
             <div class="callback">
-                <input type="button" value="Заказать звонок" class="btn popup-open">
+                <input type="button" value="Заказать звонок" class="btn popup-open-order">
             </div>
 
         </div>
@@ -231,11 +227,11 @@
         <div class="container info-product">
 
             <div class="slick-product">
-                <img src="../../images/furniture/pegaso 2.png" alt="bed" class="img-product">
-                <img src="../../images/furniture/pegaso 2.png" alt="bed" class="img-product">
-                <img src="../../images/furniture/pegaso 2.png" alt="bed" class="img-product">
-                <img src="../../images/furniture/pegaso 2.png" alt="bed" class="img-product">
-                <img src="../../images/furniture/pegaso 2.png" alt="bed" class="img-product">
+                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
+                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
+                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
+                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
+                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
             </div>
             <div class="main-info-product">
 
@@ -340,10 +336,10 @@
         <div class="container">
             <h2>Похожие товары</h2>
             <div class="slick-products">
-                <a href="../catalog/product/index.html">
+                <a href="catalog/product/index.html">
                     <div class="product">
                         <p class="name">Кровать</p>
-                        <img src="../../images/furniture/bed.png" alt="bed">
+                        <img src="images/furniture/bed.png" alt="bed">
                         <div class="order">
                             <div class="price">
                                 <div class="coast">16 900р</div>
@@ -357,10 +353,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="../catalog/product/index.html">
+                <a href="catalog/product/index.html">
                     <div class="product">
                         <p class="name">Кровать</p>
-                        <img src="../../images/furniture/bed.png" alt="bed">
+                        <img src="images/furniture/bed.png" alt="bed">
                         <div class="order">
                             <div class="price">
                                 <div class="coast">16 900р</div>
@@ -374,10 +370,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="../catalog/product/index.html">
+                <a href="catalog/product/index.html">
                     <div class="product">
                         <p class="name">Кровать</p>
-                        <img src="../../images/furniture/bed.png" alt="bed">
+                        <img src="images/furniture/bed.png" alt="bed">
                         <div class="order">
                             <div class="price">
                                 <div class="coast">16 900р</div>
@@ -391,10 +387,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="../catalog/product/index.html">
+                <a href="catalog/product/index.html">
                     <div class="product">
                         <p class="name">Кровать</p>
-                        <img src="../../images/furniture/bed.png" alt="bed">
+                        <img src="images/furniture/bed.png" alt="bed">
                         <div class="order">
                             <div class="price">
                                 <div class="coast">16 900р</div>
@@ -408,10 +404,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="../catalog/product/index.html">
+                <a href="catalog/product/index.html">
                     <div class="product">
                         <p class="name">Кровать</p>
-                        <img src="../../images/furniture/bed.png" alt="bed">
+                        <img src="images/furniture/bed.png" alt="bed">
                         <div class="order">
                             <div class="price">
                                 <div class="coast">16 900р</div>
@@ -425,10 +421,10 @@
                         </div>
                     </div>
                 </a>
-                <a href="../catalog/product/index.html">
+                <a href="catalog/product/index.html">
                     <div class="product">
                         <p class="name">Кровать</p>
-                        <img src="../../images/furniture/bed.png" alt="bed">
+                        <img src="images/furniture/bed.png" alt="bed">
                         <div class="order">
                             <div class="price">
                                 <div class="coast">16 900р</div>
@@ -449,16 +445,16 @@
     <nav>
         <div class="container">
             <ul>
-                <li><a class="page" href="../catalog/">Каталог</a></li>
-                <li><a class="page" href="../../index.html">О компании</a></li>
-                <li><a class="page" href="../../contact.html">Контакты</a></li>
-                <li><a class="page" href="../../review.html">Отзывы</a></li>
+                <li><a class="page" href="catalog/">Каталог</a></li>
+                <li><a class="page" href="index.html">О компании</a></li>
+                <li><a class="page" href="contact.html">Контакты</a></li>
+                <li><a class="page" href="review.html">Отзывы</a></li>
             </ul>
             <div class="contact-section">
                 <div class="contact-block">
                     <div class="info-block">
                         <a href="https://yandex.ru/maps/-/CCUVINbSSD">
-                            <img src="../../images/icons/home.svg" alt="address">
+                            <img src="images/icons/home.svg" alt="address">
                             <div class="info">
                                     <span class="main-info">
                                         ул. Дзержинского 38а
@@ -474,7 +470,7 @@
                 <div class="contact-block">
                     <div class="info-block">
                         <a href="tel: +79276146281">
-                            <img src="../../images/icons/phone.svg" alt="phone">
+                            <img src="images/icons/phone.svg" alt="phone">
                             <div class="info">
                                     <span class="main-info">
                                         +7(927)614-62-81
@@ -490,11 +486,11 @@
     </nav>
     <div class="main-footer">
         <div class="container">
-            <a href="../../index.html" class="logo">
-                <img src="../../images/logo.png" alt="logo">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="logo">
             </a>
             <div class="politics">
-                <a href="../../agreement.html">Политика конфиденциальности</a>
+                <a href="agreement.html">Политика конфиденциальности</a>
                 <span>© 2022 | "Белая мебель", Все права защищены</span>
             </div>
             <div class="messanger">
@@ -509,8 +505,8 @@
 
 <script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
 <script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
-<script type="text/javascript " src="../../slick/slick.min.js "></script>
+<script type="text/javascript " src="slick/slick.min.js "></script>
 
-<script src="../../script/script.js "></script>
+<script src="script/script.js "></script>
 
 </html>
