@@ -22,10 +22,9 @@ input {
   z-index: 1;
 } */
 
-body{
+body {
     min-height: 100vh;
 }
-
 
 
 /* a
@@ -2955,7 +2954,7 @@ form .select-color label:nth-last-of-type(1) {
     margin-top: -30px;
 }
 
-.slick-button-section.slider.stock{
+.slick-button-section.slider.stock {
     gap: 35px;
     padding-top: 40px;
 }
@@ -2983,7 +2982,7 @@ form .select-color label:nth-last-of-type(1) {
 .slick-button-section .about-prev,
 .slick-button-section .about-next,
 .slick-button-section .slic-stock-next,
-.slick-button-section .slic-stock-prev{
+.slick-button-section .slic-stock-prev {
     padding: 10px 15px;
     color: #fff;
     background-color: var(--pink);
@@ -3833,6 +3832,44 @@ main section .slick-stock .slick-arrow.slick-prev {
 }
 
 
-.block-right.deco.order-success span{
+.block-right.deco.order-success span {
     font-size: 96px;
+}
+
+/* Современные браузеры
+   ----------------------------  */
+form .custom-input .input-form::placeholder {
+    color: gray;
+}
+
+/* WebKit, Edge
+   ----------------------------  */
+form .custom-input .input-form::-webkit-input-placeholder {
+    color: gray;
+}
+
+/* Edge
+   ----------------------------  */
+form .custom-input .input-form::-ms-input-placeholder {
+    color: gray;
+}
+
+/* Firefox 4-18
+   ----------------------------  */
+form .custom-input .input-form:-moz-placeholder {
+    color: gray;
+    opacity: 1;
+}
+
+/* Firefox 19+
+   ----------------------------  */
+form .custom-input .input-form::-moz-placeholder {
+    color: gray;
+    opacity: 1;
+}
+
+/* IE 10-11
+   ----------------------------  */
+form .custom-input .input-form:-ms-input-placeholder {
+    color: gray;
 }
