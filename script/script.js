@@ -418,8 +418,16 @@ $(".btn-modal-order").click(() => {
         $(".recall-form .name"),
         $(".recall-form .phone"),
     ];
-    for (let i = 0; i < data.length; i++) {
-        validateOrder(data[i])
+    if (validateOrder(data)) {
+        let objMain = {
+            data: {
+                'phone': data[1],
+                'name': data[0],
+            },
+            "form_kind": "modal-main"
+        }
+        // sendAjaxRequest(objMain);
+        window.location.replace("order_success.html");
     }
 });
 
@@ -428,8 +436,16 @@ $(".btn-index-form").click(() => {
         $(".mini-form .name"),
         $(".mini-form .phone"),
     ];
-    for (let i = 0; i < data.length; i++) {
-        validateOrder(data[i])
+    if (validateOrder(data)) {
+        let objMain = {
+            data: {
+                'phone': data[1],
+                'name': data[0],
+            },
+            "form_kind": "modal"
+        }
+        // sendAjaxRequest(objMain);
+        window.location.replace("order_success.html");
     }
 });
 
@@ -438,19 +454,33 @@ $(".btn-order-max").click(() => {
         $(".form-max .name"),
         $(".form-max .phone"),
     ];
-    for (let i = 0; i < data.length; i++) {
-        validateOrder(data[i])
+    if (validateOrder(data)) {
+        let objMain = {
+            data: {
+                'phone': data[1],
+                'name': data[0],
+            },
+            "form_kind": "modal-main"
+        }
+        // sendAjaxRequest(objMain);
+        window.location.replace("order_success.html");
     }
 });
 
 //   функция валидации
-function validateOrder(item) {
-    let itemValue = item.val();
-    if (itemValue == "") {
-        item.addClass("warning-inputs");
-    } else {
-        item.removeClass("warning-inputs");
+function validateOrder(data) {
+    let errors = false
+    for (let i = 0; i < data.length; i++) {
+        let itemValue = data[i].val();
+        if (itemValue == "") {
+            data[i].addClass("warning-inputs");
+            errors = false
+        } else {
+            data[i].removeClass("warning-inputs");
+            errors = true
+        }
     }
+    return (errors)
 }
 
 // let body=document.querySelector('body');

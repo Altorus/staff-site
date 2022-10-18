@@ -2,26 +2,29 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/mobile.css">
-    <link rel="stylesheet" href="fonts/gilroy/style.css">
-    <link rel="stylesheet" href="fonts/geometria/style.css">
 
-    <link rel="icon" href="images/icons/favicon.svg" type="image/x-icon">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/mobile.css">
+        <link rel="stylesheet" href="fonts/gilroy/style.css">
+        <link rel="stylesheet" href="fonts/geometria/style.css">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+        <link rel="icon" href="images/icons/favicon.svg" type="image/x-icon">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;500&display=swap"
-            rel="stylesheet">
-    <title>Кровать "название фирмы"</title>
+        <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+        <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+                href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Roboto:wght@300;500&display=swap"
+                rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>Заказ успешно создан</title>
+    </head>
 </head>
 
 <body>
@@ -216,230 +219,23 @@
     </div>
 </header>
 <main>
-    <section>
-        <div class="container">
-            <ul class="breadcrumb">
-                <li><a href="#">Каталог</a></li>
-                <li class=""><a href="#">Кровати</a></li>
-                <li class="active">Название товара</li>
-            </ul>
-        </div>
-        <div class="container info-product">
+    <div class="deco-section">
+        <div class="block-error1"></div>
 
-            <div class="slick-product">
-                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
-                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
-                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
-                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
-                <img src="images/furniture/pegaso 2.png" alt="bed" class="img-product">
-            </div>
-            <div class="main-info-product">
-
-                <h2>Кровать “Название фирмы”</h2>
-                <div class="material-product">
-                    <ul class="feature">
-                        <li>
-                            <div class="feature-left">Цвет профиля</div>
-                            <div class="feature-right">Венге</div>
-                        </li>
-                        <li>
-                            <div class="feature-left">Материал фасада</div>
-                            <div class="feature-right">ДСП</div>
-                        </li>
-                        <li>
-                            <div class="feature-left">Цвет корпуса</div>
-                            <div class="feature-right">Бордо</div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="info-block">
-                    <div class="coast-container">
-                        <div class="top-coast">
-                            <p>Цена</p>
-                            <span>42 000 руб.</span>
-                        </div>
-                        <span>32 000 руб.</span>
-                    </div>
-                    <div class="size-container">
-                        <div class="size">
-                            <span>Высота</span>
-                            <span>2610</span>
-                        </div>
-                        <div class="size">
-                            <span>Длина</span>
-                            <span>600</span>
-                        </div>
-                        <div class="size">
-                            <span>Глубина</span>
-                            <span>2300</span>
-                        </div>
-                    </div>
-                    <form class="info-grid" action="#">
-                        <div class="select-color product">
-                            <p class="select">Выберите цвет:</p>
-                            <input type="radio" name="color-form" value="Венге" id="venge">
-                            <label for="venge" data-title="Венге"></label>
-                            <input type="radio" name="color-form" value="Дуб Сонома" id="dub">
-                            <label for="dub" data-title="Дуб Сонома"></label>
-                            <input type="radio" name="color-form" value="Ясень шимо светлый" id="yasen">
-                            <label for="yasen" data-title="Ясень шимо светлый"></label>
-                            <input type="radio" name="color-form" value="Белый" id="white">
-                            <label for="white" data-title="Белый"></label>
-                            <input type="radio" name="color-form" value="Выбеленое дерево" id="whiteWood">
-                            <label for="whiteWood" data-title="Выбеленое дерево"></label>
-                            <div class="color-selecting-form"></div>
-                        </div>
-                        <p>Полная палитра в офисах продаж</p>
-                        <input class="btn popup-open-order" type="button" value="Купить сейчас">
-                        <div class="link-a">
-                            <a href="#" class="popup-open">Заказать по индивидуальным размерам</a>
-                        </div>
-                    </form>
-                </div>
-
-            </div>
+    </div>
+    <div class="container error">
+        <div class="block-left">
+            <h2>Готово</h2>
+            <p>Заказ успешно создан</p>
+            <span>Наши менеджеры перезвонят вам в ближайшее время</span>
+            <a href="" class="btn">Главная</a>
         </div>
-    </section>
-    <section>
-        <div class="container description-container">
-            <h2>Описание и характеристики</h2>
-            <div class="more-block">
-                <div class="description-block">
-                    <h3>Описание</h3>
-                    <p>Значимость этих проблем настолько очевидна, что сложившаяся структура организации
-                        способствует подготовки и реализации направлений прогрессивного развития.Значимость этих
-                        проблем настолько очевидна, что сложившаяся структура организации способствует подготовки и
-                        реализации направлений прогрессивного развития.</p>
-                </div>
-                <div class="characteristics-block">
-                    <h3>Характеристики</h3>
-                    <div class="characteristic">
-                        <span>Назначение</span>
-                        <a href="#">Для спальни</a>
-                    </div>
-                    <div class="characteristic">
-                        <span>Тип</span>
-                        <a href="#">Для спальни</a>
-                    </div>
-                    <div class="characteristic">
-                        <span>Цвет</span>
-                        <div class="color">
-                            <a href="#">Светлый</a>
-                            <a href="#">Темный</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="block-right deco order-success">
+            <span>Спасибо</span>
         </div>
-    </section>
-    <section>
-        <div class="container">
-            <h2>Похожие товары</h2>
-            <div class="slick-products">
-                <a href="catalog/product/index.html">
-                    <div class="product">
-                        <p class="name">Кровать</p>
-                        <img src="images/furniture/bed.png" alt="bed">
-                        <div class="order">
-                            <div class="price">
-                                <div class="coast">16 900р</div>
-                                <div class="old-price">
-                                    <span>20 900</span>
-                                    <span class="discount">-20%</span>
-                                </div>
-                                <p>Хит-продаж</p>
-                            </div>
-                            <input type="button" class="btn" value="Заказать">
-                        </div>
-                    </div>
-                </a>
-                <a href="catalog/product/index.html">
-                    <div class="product">
-                        <p class="name">Кровать</p>
-                        <img src="images/furniture/bed.png" alt="bed">
-                        <div class="order">
-                            <div class="price">
-                                <div class="coast">16 900р</div>
-                                <div class="old-price">
-                                    <span>20 900</span>
-                                    <span class="discount">-20%</span>
-                                </div>
-                                <p>Хит-продаж</p>
-                            </div>
-                            <input type="button" class="btn" value="Заказать">
-                        </div>
-                    </div>
-                </a>
-                <a href="catalog/product/index.html">
-                    <div class="product">
-                        <p class="name">Кровать</p>
-                        <img src="images/furniture/bed.png" alt="bed">
-                        <div class="order">
-                            <div class="price">
-                                <div class="coast">16 900р</div>
-                                <div class="old-price">
-                                    <span>20 900</span>
-                                    <span class="discount">-20%</span>
-                                </div>
-                                <p>Хит-продаж</p>
-                            </div>
-                            <input type="button" class="btn" value="Заказать">
-                        </div>
-                    </div>
-                </a>
-                <a href="catalog/product/index.html">
-                    <div class="product">
-                        <p class="name">Кровать</p>
-                        <img src="images/furniture/bed.png" alt="bed">
-                        <div class="order">
-                            <div class="price">
-                                <div class="coast">16 900р</div>
-                                <div class="old-price">
-                                    <span>20 900</span>
-                                    <span class="discount">-20%</span>
-                                </div>
-                                <p>Хит-продаж</p>
-                            </div>
-                            <input type="button" class="btn" value="Заказать">
-                        </div>
-                    </div>
-                </a>
-                <a href="catalog/product/index.html">
-                    <div class="product">
-                        <p class="name">Кровать</p>
-                        <img src="images/furniture/bed.png" alt="bed">
-                        <div class="order">
-                            <div class="price">
-                                <div class="coast">16 900р</div>
-                                <div class="old-price">
-                                    <span>20 900</span>
-                                    <span class="discount">-20%</span>
-                                </div>
-                                <p>Хит-продаж</p>
-                            </div>
-                            <input type="button" class="btn" value="Заказать">
-                        </div>
-                    </div>
-                </a>
-                <a href="catalog/product/index.html">
-                    <div class="product">
-                        <p class="name">Кровать</p>
-                        <img src="images/furniture/bed.png" alt="bed">
-                        <div class="order">
-                            <div class="price">
-                                <div class="coast">16 900р</div>
-                                <div class="old-price">
-                                    <span>20 900</span>
-                                    <span class="discount">-20%</span>
-                                </div>
-                                <p>Хит-продаж</p>
-                            </div>
-                            <input type="button" class="btn" value="Заказать">
-                        </div>
-                    </div>
-                </a>
-            </div>
-    </section>
+        <div class="block-error2 deco"></div>
+        <div class="block-error3 deco"></div>
+    </div>
 </main>
 <footer>
     <nav>
@@ -483,6 +279,7 @@
                     </div>
                 </div>
             </div>
+        </div>
     </nav>
     <div class="main-footer">
         <div class="container">
@@ -502,11 +299,8 @@
         </div>
     </div>
 </footer>
-
-<script type="text/javascript " src="//code.jquery.com/jquery-1.11.0.min.js "></script>
-<script type="text/javascript " src="//code.jquery.com/jquery-migrate-1.2.1.min.js "></script>
 <script type="text/javascript " src="slick/slick.min.js "></script>
-
 <script src="script/script.js "></script>
+</body>
 
 </html>

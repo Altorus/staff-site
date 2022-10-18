@@ -22,18 +22,11 @@ input {
   z-index: 1;
 } */
 
-main
-section
-.container
-.main-info-product
-.info-block
-form
-.select-color
-label::before {
-    content: attr(data-title);
-    display: none;
-    color: black;
+body{
+    min-height: 100vh;
 }
+
+
 
 /* a
   main
@@ -2547,12 +2540,6 @@ form .select-color input[type=radio]:checked + label {
     border: 2px solid var(--red);
 }
 
-form .select-color label::before {
-    content: attr(data-title);
-    display: none;
-    color: black;
-}
-
 form .select-color label:last-of-type:hover::before {
     display: block;
     position: absolute;
@@ -3843,4 +3830,9 @@ main section .slick-stock .slick-arrow.slick-prev {
 
 .select-color input:hover {
     cursor: pointer;
+}
+
+
+.block-right.deco.order-success span{
+    font-size: 96px;
 }
